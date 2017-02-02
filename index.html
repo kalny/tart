@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>T-Art studio</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="img/favicon/image.png?ver=1.2.0">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico?ver=1.2.0" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png?ver=1.2.0">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png?ver=1.2.0">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png?ver=1.2.0">
+	<!-- Template Basic Images End -->
+
+	<!-- Bootstrap (latest) Grid Styles Only -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table !important}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table !important}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table !important}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table !important}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table !important}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style>.main-header::before,.points-list li::after{content:'';left:0;top:0}.header-card span,.header-cards-container{text-align:center}.header-card .img-wrapper,.points-list li::after,.rounded{-webkit-border-radius:50%;border-radius:50%}::-webkit-input-placeholder{color:#666;opacity:1}:-moz-placeholder{color:#666;opacity:1}::-moz-placeholder{color:#666;opacity:1}:-ms-input-placeholder{color:#666;opacity:1}body input:focus:required:invalid,body input:required:valid,body textarea:focus:required:invalid,body textarea:required:valid{color:#666}body{font-size:16px;min-width:320px;position:relative;line-height:1.6;font-family:PTSansRegular,sans-serif;overflow-x:hidden}.logo-wrapper span,.main-header h1{font-family:RobotoThin,sans-serif}li,ul{margin:0;padding:0}ul li{list-style-type:none}.form-control{display:block;width:100%;border:none;background-color:#e4dcdc;color:#212121;padding:15px 25px;margin-bottom:35px}.form-control:last-child{margin-bottom:0}.main-header{position:fixed;top:0;z-index:1;width:100%;height:100vh;margin-top:70px;background-image:url(img/bg.png);background-position:center;background-size:cover;background-color:#212121}footer,section{position:relative;z-index:2}.main-header h1{color:#e4dcdc;font-weight:400;margin-top:28px;font-size:34px}.main-header::before{display:block;position:absolute;height:100%;width:100%;background-color:rgba(129,129,129,.11)}.menu-line ul li,.menu-line ul li a{display:inline-block}.menu-line{background-color:rgba(45,45,45,.9);width:100%;height:70px;position:fixed;z-index:3;top:0}.menu-line ul li a{line-height:70px;padding:0 50px;color:#e4dcdc;font-size:18px;-webkit-transition:color .2s ease;transition:color .2s ease}.menu-line ul li a:hover{color:#ffea00;text-decoration:none}.menu-line ul li:first-child a{padding-left:100px}.logo-wrapper{margin-top:45px;border:1px solid #ffea00;background-color:#505050}.logo-wrapper span{line-height:38px;background-color:rgba(255,255,255,.22);display:block;font-size:30px;color:#121212;text-align:center}.logo-wrapper img{width:80%;display:block;margin:20px auto 50px}.points-list{color:#e4dcdc;font-size:18px;margin-top:35px}.points-list li{margin-bottom:27px;padding-left:50px;position:relative}.points-list li:last-child{margin-bottom:0}.points-list li::after{display:block;position:absolute;width:20px;height:20px;background-color:#e4dcdc;margin-top:6px}.header-card{margin-top:50px;margin-bottom:50px;width:230px;display:inline-block}.header-card .img-wrapper{margin:0 auto;width:150px;border:1px solid #5CF900;background-color:rgba(30,134,140,.23)}.header-card span{margin-top:30px;display:block;font-size:18px;color:#e4dcdc}.first-section{margin-top:100vh}</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.2.4", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<!-- Load Custom CSS Start -->
+	
+	<script>loadCSS( "css/main.min.css?ver=1.2.4", false, "all" );</script>
+	<!-- Load Custom CSS End -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<div class="menu-line">
+		<div class="container">
+			<ul class="scroll-menu">
+				<li><a href="#reviews">Отзывы</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+				<li><a href="#action">Акция</a></li>
+				<li><a href="#order">Заказать</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="sectwrapper">
+		<header class="section main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-3 visible-lg-block visible-md-block visible-sm-block">
+						<div class="logo-wrapper">
+							<span>T-Art studio</span>
+							<img src="img/logo.svg" alt="T-Art studio">
+						</div>
+					</div>
+					<div class="col-lg-7 col-lg-offset-1 col-md-8 col-sm-9 col-xs-12">
+						<h1>У нас вы можете заказать футболку:</h1>
+						<ul class="points-list">
+							<li>с понравившейся картинкой из каталога;</li>
+							<li>любым изображением из интернета;</li>
+							<li>любой надписью;</li>
+							<li>фотографией близкого человека;</li>
+							<li>нарисованным вами или нашим художником изображением.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1 col-md-12">
+
+						<div class="header-cards-container">
+
+							<div class="header-card">
+								<div class="img-wrapper">
+									<img src="img/header/quick.svg" alt="Быстрое исполнение">
+								</div>
+								<span>Быстрое исполнение</span>
+							</div>
+
+							<div class="header-card">
+								<div class="img-wrapper">
+									<img src="img/header/designer.svg" alt="Услуги художника">
+								</div>
+								<span>Услуги художника</span>
+							</div>
+
+							<div class="header-card">
+								<div class="img-wrapper">
+									<img src="img/header/quality.svg" alt="Качественные материалы">
+								</div>
+								<span>Качественные материалы</span>
+							</div>
+
+							<div class="header-card">
+								<div class="img-wrapper">
+									<img src="img/header/warrancy.svg" alt="Гарантия">
+								</div>
+								<span>Гарантия</span>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			
+		</header>
+
+		<div class="button-up"></div>
+
+		<section class="section section-semi-light first-section">
+			<div class="section-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-12">
+							<img class="main-image" src="img/futbolka.png" alt="Футболка">
+							<div class="pointer">	
+							
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+									<path d="M601.4,460.5c7.7,0,13.9-6.2,13.9-13.9c0-7.7-6.2-13.9-13.9-13.9c-7.7,0-13.9,6.2-13.9,13.9
+										C587.5,454.3,593.7,460.5,601.4,460.5z"/>
+									<path d="M950.1,299.3c-19.1-45.1-46.4-85.5-81.1-120.3c-34.8-34.8-75.2-62.1-120.3-81.1C702,78.1,652.5,68.1,601.4,68.1
+										s-100.7,10-147.3,29.7c-45.1,19.1-85.5,46.4-120.3,81.1s-62.1,75.2-81.1,120.3c-19.7,46.7-29.7,96.2-29.7,147.3
+										s10,100.7,29.7,147.3c1.3,3.2,2.7,6.3,4.2,9.4L22.7,711V944c-4.9,0.7-8.6,4.9-8.6,9.9c0,5.5,4.5,10.1,10.1,10.1
+										s10.1-4.5,10.1-10.1c0-5.1-3.8-9.2-8.6-9.9V712.8L258,606c18.7,40.2,44.1,76.6,75.7,108.2c34.8,34.8,75.2,62,120.3,81.1
+										c46.7,19.7,96.2,29.7,147.3,29.7s100.7-10,147.3-29.7c45.1-19.1,85.5-46.4,120.3-81.1c34.8-34.8,62.1-75.2,81.1-120.3
+										c19.7-46.7,29.7-96.2,29.7-147.3S969.9,346,950.1,299.3z M601.4,824.6c-151.6,0-282.7-89.7-342.8-218.9l85.5-39.3
+										c13.8,29.7,32.9,57,56.7,80.8c53.6,53.6,124.9,83.1,200.7,83.1s147.1-29.5,200.7-83.1c53.6-53.6,83.1-124.9,83.1-200.7
+										c0-75.8-29.5-147.1-83.1-200.7c-53.6-53.6-124.9-83.1-200.7-83.1S454.3,192.4,400.7,246c-53.6,53.6-83.1,124.9-83.1,200.7
+										c0,41.1,8.7,80.9,25.2,117.2l-85.5,39.3c-21.8-47.7-33.9-100.7-33.9-156.5c0-208.4,169.6-378,378-378c208.4,0,378,169.6,378,378
+										C979.4,655.1,809.8,824.6,601.4,824.6z M601.4,485.6c21.5,0,38.9-17.5,38.9-38.9c0-21.5-17.5-38.9-38.9-38.9
+										c-21.5,0-38.9,17.5-38.9,38.9c0,5.3,1.1,10.3,3,14.9l-108.1,49.7c-8.9-19.7-13.8-41.6-13.8-64.6c0-87.1,70.8-157.9,157.9-157.9
+										s157.9,70.8,157.9,157.9c0,87.1-70.8,157.9-157.9,157.9c-63,0-117.5-37.1-142.8-90.7l108.1-49.7
+										C573.1,476.9,586.2,485.6,601.4,485.6z M572.1,446.6c0-16.1,13.1-29.3,29.3-29.3c16.1,0,29.3,13.1,29.3,29.3
+										c0,16.1-13.1,29.3-29.3,29.3C585.2,475.9,572.1,462.8,572.1,446.6z M601.4,605.5c87.6,0,158.9-71.3,158.9-158.9
+										S689,287.8,601.4,287.8S442.5,359,442.5,446.6c0,23.1,5,45.2,13.9,65l-112.8,51.9c-16.2-35.6-25.3-75.2-25.3-116.9
+										c0-156.1,127-283.1,283.1-283.1c156.1,0,283.1,127,283.1,283.1c0,156.1-127,283.1-283.1,283.1c-113.4,0-211.4-67-256.6-163.6
+										l112.8-51.9C483.1,568.1,538,605.5,601.4,605.5z"/>
+								</svg>
+
+							</div>							
+							<p>Здесь может быть изображено именно то, что вам нужно. На ХБ футболку высшего качества мы нанесем любой рисунок медодом термопечати. Эта технология позволяет нам получать износостойкие яркие принты, легко переносящие до 20 стирок и не подверженные механическим повреждениям. Мы уверены в качестве своей продукции. Мы предоставляем гарантию и хорошие скидки. Наши цены не кусаются. Найдете где дешевле - будет вам дополнительная скидка за находчивость.</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+
+
+		<section class="section section-light">
+			<div id="about" class="section-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-12">
+							<header>
+								<h2>Почему стоит заказать футболку с необычным принтом</h2>
+								<p>И чем такая вещь лучше тех, которые можно купить в любом магазине?</p>
+							</header>							
+						</div>
+					</div>
+					<div class="row">
+						<div class="vantage clearfix">
+							
+							<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+								<div class="vantage-icon">
+									<div class="vant-img-wrap">
+										<img src="img/vantage/expression.svg" alt="Самовыражение">
+									</div>
+								</div>
+								<div class="vantage-content">
+									<h3>Самовыражение</h3>
+									<p>Мы всегда ищем вещи, наиболее соответствующие нашим взглядам, отражающие наше мнение. Но необязательно выбирать из предложенных вариантов, вы сами можете решить, какой должна быть ваша футболка.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="vantage clearfix">
+							
+							<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+								<div class="vantage-icon">
+									<div class="vant-img-wrap">
+										<img src="img/vantage/creativity.svg" alt="Самовыражение">
+									</div>
+								</div>
+								<div class="vantage-content">
+									<h3>Креативность</h3>
+									<p>Если вы творческий человек, неплохо рисуете и хотите применить свои таланты для создания своего имиджа, вы можете украсить футболку рисунком собственного авторства.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="vantage clearfix">
+							
+							<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+								<div class="vantage-icon">
+									<div class="vant-img-wrap">
+										<img src="img/vantage/individuality.svg" alt="Самовыражение">
+									</div>
+								</div>
+								<div class="vantage-content">
+									<h3>Индивидуальность</h3>
+									<p>Ни в одном магазине вы не купите футболку с фотографией близкого человека или посвященной ему надписью</p>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section section-semi-light">
+			<div id="vantage" class="section-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-12">
+							<header>
+								<h2>Почему заказать футболку выгодно именно у нас</h2>							
+							</header>
+
+							<div class="profit-cards-container">
+
+								<div class="profit-card">
+									<div class="profit-icon">
+										<img src="img/profit/quick.svg" alt="Быстрое исполнение">
+									</div>
+									<h3>Быстрое исполнение</h3>
+									<p>Отлаженный производственный процесс позволяет нам выполнять заказы в кратчайшие сроки. Сразу после оформления заявки к работе над вашей футболкой приступает команда из нескольких специалистов</p>
+								</div>
+
+								<div class="profit-card">
+									<div class="profit-icon">
+										<img src="img/profit/delivery.svg" alt="Доставка в любой город">
+									</div>
+									<h3>Доставка в любой город</h3>
+									<p>Мы сотрудничаем со всеми курьерскими службами. Вы можете выбрать любой удобный для вас способ доставки. Даже если в вашем населенном пункте нет отделений служб доставки, футболку вам может доставить наш курьер.</p>
+								</div>
+
+								<div class="profit-card">
+									<div class="profit-icon">
+										<img src="img/profit/designer.svg" alt="Услуги художника">
+									</div>
+									<h3>Услуги художника</h3>
+									<p>Профессиональный художник-иллюстратор поможет воплотить самые смелые идеи. Он может создать по вашей задумке стильный уникальный рисунок, или подготовить к печати изображение вашего авторства.</p>
+								</div>
+
+								<div class="profit-card">
+									<div class="profit-icon">
+										<img src="img/profit/warrancy.svg" alt="Гарантия">
+									</div>
+									<h3>Гарантия</h3>
+									<p>Мы уверены в качестве своей продукции, поэтому на каждую заказанную у нас футболку мы предоставляем гарантию 6 месяцев. Гарантия распространяется на качество рисунка, который должен выдержать полгода стирок.</p>
+								</div>
+
+								<div class="profit-card">
+									<div class="profit-icon">
+										<img src="img/profit/quality.svg" alt="Качественные материалы">
+									</div>
+									<h3>Качественные материалы</h3>
+									<p>Мы делаем ХБ футболки высшего качества, не используем дешевые синтетические материалы. Ткань и краски, которые мы применяем, безвредны для здоровья и соответствуют стандартам.</p>
+								</div>
+
+								<div class="profit-card">
+									<div class="profit-icon">
+										<img src="img/profit/prices.svg" alt="Обоснованные цены">
+									</div>
+									<h3>Обоснованные цены</h3>
+									<p>Мы не завышаем стоимость готовой продукции. Цена составляется из оплаты видов работ, которые выполняются в процессе создания каждой футболки.</p>
+								</div>
+								
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section section-light section-margin">
+			<div id="schema" class="section-wrap">
+				<div class="container">
+
+					<header>
+						<h2>Схема процесса: от заказа до получения</h2>							
+					</header>
+
+					<div class="row">
+						<div class="process-container">
+
+							
+							<div class="col-sm-4 col-xs-12">
+								<div class="process-card">
+									<h3><span>1</span></h3>
+									<p>1. Вы подаете заявку, описывая свои пожелания. Для этого необходимо воспользоваться специальной формой ниже.</p>
+									<div class="arrow"></div>
+								</div>
+							</div>
+						
+
+
+						
+							<div class="col-sm-4 col-xs-12">
+								<div class="process-card">
+									<h3><span>2</span></h3>
+									<p>2. Мы связываемся с вами и уточняем детали: Размер, цвет, количество экземпляров, адрес доставки, способ оплаты, сроки.</p>
+									<div class="arrow"></div>
+								</div>
+							</div>
+						
+
+						
+							<div class="col-sm-4 col-xs-12">
+								<div class="process-card">
+									<h3><span>3</span></h3>
+									<p>3. Вы производите оплату удобным способом. Также может быть выбран вариант оплаты при получении футболки.</p>
+								</div>
+							</div>
+						
+
+						
+							<div class="col-sm-4 col-xs-12">
+								<div class="process-card">
+									<h3><span>4</span></h3>
+									<p>4. В течение рабочего дня мы составляем макет будущей футболки и отправляем вам на рассмотрение и подтверждение.</p>
+									<div class="arrow"></div>
+								</div>
+							</div>
+						
+
+
+						
+							<div class="col-sm-4 col-xs-12">
+								<div class="process-card">
+									<h3><span>5</span></h3>
+									<p>5. В тот же день через некоторое времяя с вами снова связывается наш менеджер чтобы выяснить, подтверждаете ли вы заказ</p>
+									<div class="arrow"></div>
+								</div>
+							</div>
+						
+
+						
+							<div class="col-sm-4 col-xs-12">
+								<div class="process-card">
+									<h3><span>6</span></h3>
+									<p>6. Вскоре мы высылаем фотографию футболки, и если результат соответствует ожиданиям, мы отправляем вам посылку.</p>
+								</div>
+							</div>
+
+							<img class="big-arrow" src="img/arrow.svg" alt="Arrow">
+
+							
+
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section section-dark">
+			<div id="reviews" class="section-wrap section-reviews">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-12">
+							<header>
+								<h2>Отзывы наших клиентов</h2>							
+							</header>
+
+							<div class="reviews-container clearfix">
+
+								<div class="review clearfix">
+									<div class="review-client">
+										<img src="img/clients/client-1.png" alt="Иван Иванович Иванов">
+										<h3>Иван Иванович Иванов</h3>
+										<p>Главный инженер завода такого-то</p>
+									</div>
+									<div class="review-content">
+										<p>Для корпоративного мероприятия нам понадобилось 34 футболки с логотипами компании. Причем задание раздобыть эту эксклюзивную форму руководство выдало за три дня до события. Мы предложили этот заказ компании такой-то и не ошиблись: все сделано в лучшем виде, без задержек.</p>
+										<p>Спасибо большое сотрудникам: терпеливым менеджерам, талантливым художникам, знающим свое дело технологам.</p>
+										<p>Разумеется, если впредь нам снова будет дана подобная задача, мы не задумываясь обратимся к вам.</p>
+									</div>
+								</div>
+
+								<div class="review clearfix">
+									<div class="review-client">
+										<img src="img/clients/client-2.png" alt="Иван Иванович Иванов">
+										<h3>Петр Петрович Петров</h3>
+										<p>Гопник из Константиновки</p>
+									</div>
+									<div class="review-content">
+										<p>Спасибо, отличная футболка! Друзья давно делают себе майки и бейсболки на заказ, вот и я решил. Картинку нарисовал сам. Нарисовал череп, но он получился немного корявый. Заплатил, художники фирмы T-Art все исправили. Теперь вроде как и я сам сделал, своими руками, а в то же время выглядит классно.</p>
+										<p>Буду всем рекомендовать вашу компанию. Спасибо еще раз.</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-light">
+			<div id="action" class="section-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-12">
+							<header>
+								<h2 class="bold-header">Акция!</h2>							
+							</header>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-lg-offset-1 col-md-5 col-sm-5 col-xs-5">
+							<div class="action-left">Внимание! Следующие</div>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-2">
+							<div class="action-counter clearfix">
+								<div class="action-counter-item">8</div>
+								<div class="action-counter-item">7</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+							<div class="action-right">футболок будут проданы</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="action-bottom">со скидкой 30%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section section-dark">
+			<div id="order" class="section-wrap section-order">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-lg-offset-3 col-md-12">
+							<header>
+								<h2>Заполните форму и закажите футболку своей мечты прямо сейчас</h2>							
+							</header>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+							<div class="order-form">
+								<div class="form-fields clearfix">
+									<div class="col-md-6">
+										<input class="form-control" type="text" name="name" placeholder="Ваше имя">
+										<input class="form-control" type="text" name="phone" placeholder="Телефон">
+										<input class="form-control" type="text" name="email" placeholder="Почта">
+									</div>
+									<div class="col-md-6">
+										<textarea class="form-control" name="comment" placeholder="Комментарий к заказу"></textarea>
+									</div>
+								</div>
+								<button>Отправить заявку</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-12">
+							<div class="order-bottom">
+								Мы свяжемся с вами в течение 15 минут после подачи заявки
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-light">
+			<div id="contacts" class="section-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-12">
+							<header>
+								<h2>Наши контакты</h2>							
+							</header>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-6">
+							<div class="contact-card">
+								<h3>Киев</h3>
+								<p>Адрес: Ул. Шевченко 54, 85103</p>
+								<p>т. (044) 353 07 96  (Иван)<br>т. (050) 551 76 08  (Анна)</p>
+								<p>e-mail:   tart@gmail.com<br>e-mail:   futbolki@gmail.com</p>
+								<p>Офис работает без выходных.</p>
+							</div>
+						</div>
+						<div class="col-md-4 visible-lg-block visible-md-block">
+							<img class="contact-icon" src="img/phone.svg" alt="Контакты">
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="contact-card">
+								<h3>Москва</h3>
+								<p>Адрес: Ул. Пушкина 21, 50681</p>
+								<p>т. (812) 552-12-34<br>т. + 7 (922) 555-1234</p>
+								<p>e-mail:   tartm@gmail.com<br>e-mail:   futbolkim@gmail.com</p>
+								<p>Офис работает без выходных.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-6">
+						<div class="nav-card">
+							<h3>Навигация</h3>
+							<p>Вы можете вернуться к любому разделу этой страницы:</p>
+							<ul class="scroll-menu">
+								<li><a href="#about">* О нас</a></li>
+								<li><a href="#vantage">* Преимущества</a></li>
+								<li><a href="#schema">* Схема</a></li>
+								<li><a href="#reviews">* Отзывы</a></li>
+								<li><a href="#action">* Акция</a></li>
+								<li><a href="#order">* Заказать</a></li>
+								<li><a href="#contacts">* Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 visible-lg-block visible-md-block">
+						<div class="nav-card">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2231.707832648799!2d37.48428995168837!3d55.989090981115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53c7bbd8aa68b%3A0x14bb0e8f80ab59aa!2z0J_Rg9GI0LrQuNC90YHQutCw0Y8g0YPQuy4sIDIxLCDQlNC-0LvQs9C-0L_RgNGD0LTQvdGL0LksINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMTQxNzMw!5e0!3m2!1sru!2sua!4v1482391241833" ></iframe>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="nav-card">
+							<h3>Кроме футболок</h3>
+							<p>У нас вы также можете закать другую продукцию с качественным принтом:</p>
+							<p>* бейсболки<br>* балахоны<br>* толстовки<br>* чашки, кружки</p>
+							<p>Мы также производим фирменные буклеты, флайеры, открытки и другое.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="copyright">2016 © Студия “Палитра” • Все права защищены</div>
+			</div>
+		</footer>
+
+	</div>
+	
+
+	<!-- Optimized loading JS Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js?ver=1.2.4", "async" : false},
+		{"src" : "https://use.fontawesome.com/7cebba06a2.js", "async" : false},
+		{"src" : "js/common.js?ver=1.2.4", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Optimized loading JS End -->
+
+</body>
+</html>
